@@ -12,7 +12,7 @@
 
 We've seen how objects can be related to one another directly when one object contains a reference to another. This is the "has many"/"belongs to" association, and is a direct relationship. For example, an artist may have many songs or a book might have many reviews.
 
-In addition to these one-to-one and one-to-many relationships, there are relationships that need something to join them together. For example, you don't need to have a direct relationship with the pilot of a flight you're on. You have a relationship with that flight (you're taking the flight after all), and and the pilot has a relationship with the flight (they're flying it). So you have a relationship to that pilot _through_ the flight.
+In addition to these one-to-one and one-to-many relationships, there are relationships that need something to join them together. For example, you don't need to have a direct relationship with the pilot of a flight you're on. You have a relationship with that flight (you're taking the flight after all), and the pilot has a relationship with the flight (they're flying it). So you have a relationship to that pilot _through_ the flight.
 
 If you take more than one flight, you'll have these kinds of relationships with more than one pilot, all still using your ticket as the middle man. The way we refer to this is that each customer _has many_ pilots _through_ tickets.
 
