@@ -154,7 +154,7 @@ In plain English, the customer is going to look at all of the meals, and then se
 
 Boom. We're iterating through every instance of `Meal` and returning only the ones where the meal's `customer` matches the current `customer` instance. If our customer, Sam, wants to know about all of their meals, all we need to do is call the `#meals` method on that instance.
 
-`sam.meals` will get an an array of all of Sam's meals, but what if we now want a list of all of the waiters that Sam has interacted with? We can simply reference the meals array! And since we have a method to get that array already, we can reuse that method.
+`sam.meals` will get an array of all of Sam's meals, but what if we now want a list of all of the waiters that Sam has interacted with? We can simply reference the meals array! And since we have a method to get that array already, we can reuse that method.
 
 ```ruby
   def waiters
