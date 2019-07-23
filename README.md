@@ -184,8 +184,8 @@ Now we can create `waiters`, `customers` and `meals` to our heart's content.
 
 ```ruby
   sam = Customer.new("Sam", 27)
-  pat = Waiter.new("Pat", 22)
-  alex = Waiter.new("Alex", 35)
+  pat = Waiter.new("Pat", 2)
+  alex = Waiter.new("Alex", 5)
 
   sam.new_meal(pat, 50, 10) # A Customer creates a Meal, passing in a Waiter instance
   sam.new_meal(alex, 20, 3) # A Customer creates a Meal, passing in a Waiter instance
@@ -238,7 +238,7 @@ the `#meals` method on the her Customer instance.
 ```ruby
 alex = Customer.new("Alex", 30)
 rachel = Customer.new("Rachel", 27)
-dan = Waiter.new("Dan", 22)
+dan = Waiter.new("Dan", 3)
 
 rachel.new_meal(dan, 50, 10)
 alex.new_meal(dan, 30, 5)
@@ -274,9 +274,9 @@ end
 
 ```ruby
 terrance = Customer.new("Terrance", 27)
-jason = Waiter.new("Jason", 34)
-andrew = Waiter.new("Andrew", 27)
-yomi = Waiter.new("Yomi", 20)
+jason = Waiter.new("Jason", 4)
+andrew = Waiter.new("Andrew", 7)
+yomi = Waiter.new("Yomi", 10)
 
 terrance.new_meal(jason, 50, 6)
 terrance.new_meal(andrew, 60, 8)
@@ -327,7 +327,7 @@ end
 ```
 
 ```ruby
-jason = Waiter.new("Jason", 34)
+jason = Waiter.new("Jason", 4)
 lisa = Customer.new("Lisa", 24)
 tim = Customer.new("Tim", 35)
 terrance = Customer.new("Terrance", 27)
