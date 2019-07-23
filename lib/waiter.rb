@@ -1,0 +1,3 @@
+class Waiter
+
+end
