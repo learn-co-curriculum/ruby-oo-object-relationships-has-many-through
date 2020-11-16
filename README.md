@@ -233,7 +233,7 @@ end
 Boom. We're iterating through every instance of `Meal` and returning only the
 ones where the meal's `customer` matches the current `customer` instance. If a
 customer, Rachel, wants to know about all of her meals, all we need to do is call
-the `#meals` method on the her Customer instance.
+the `#meals` method on her Customer instance.
 
 ```ruby
 alex = Customer.new("Alex", 30)
