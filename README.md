@@ -1,8 +1,8 @@
-# Ruby Object Relations: Has-Many-Through
+# Has Many Through Relationships
 
 ## Objectives
 
-* Understand Has-Many-Through relationships
+* Understand Has Many Through relationships
 * Construct indirect relationships between models (Customers, Waiters, and Meals)
 * Explore the concept of a 'joining' model
 * Continue to write code using a Single Source of Truth
@@ -10,7 +10,7 @@
 ## Introduction
 
 We've seen how objects can be related to one another directly when one object
-contains a reference to another. This is the "has-many"/"belongs-to"
+contains a reference to another. This is the "has many"/"belongs to"
 association, and is a direct relationship. For example, an artist may have many
 songs or a book might have many reviews.
 
@@ -98,7 +98,7 @@ Each instance of the `Waiter` class has a name and an attribute describing their
 years of experience. Just like the `Customer` class, the `Waiter` class has a
 class variable that stores every `waiter` instance upon initialization.
 
-## The "Has-Many-Through" Relationship
+## The "Has Many Through" Relationship
 
 In real life, as a customer, each time you go out to eat, you have a different
 meal. Even if you order the same exact thing in the exact same restaurant, it's
@@ -111,7 +111,7 @@ you only have one waiter per meal. So it could be said that your relationship
 with the waiter is through your meal. The same could be said of the waiter's
 relationship with each customer.
 
-That's the essence of the `has-many-through` relationship.
+That's the essence of the has many through relationship.
 
 ## How Does That Work in Code?
 
@@ -202,10 +202,10 @@ require_relative './lib/meal.rb'
 require_relative './lib/waiter.rb'
 ```
 
-## Completing the Has-Many-Through Relationship
+## Completing the Has Many Through Relationship
 
 This is awesome, but it isn't done yet! To complete our goal of establishing a
-has-many-through relationship, we need a way for our `customer` and `waiter`
+has many through relationship, we need a way for our `customer` and `waiter`
 instances to get information about each other. The only way they can get that
 information is through the meals they've created.
 
@@ -360,7 +360,7 @@ model.
 
 Below you'll find all the code for the `Customer` class, including a few new
 methods. Think about expanding on the `Customer` and `Waiter` classes and about
-what other methods might be possible using the has-many-through relationship.
+what other methods might be possible using the has many through relationship.
 For starters, try some of the following:
 
 * A waiter's most frequent customer
