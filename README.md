@@ -17,7 +17,7 @@ songs or a book might have many reviews.
 In addition to these one-to-one and one-to-many relationships, some
 relationships also need something to join them together. For example, you don't
 need to have a direct relationship with the pilot of a flight you're on. You
-have a relationship with that flight (you're taking the flight after all), and
+have a relationship with that flight (you'dre taking the flight after all), and
 the pilot has a relationship with the flight (they're flying it). So you have a
 relationship to that pilot _through_ the flight.
 
